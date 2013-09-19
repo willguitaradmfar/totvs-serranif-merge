@@ -4,19 +4,13 @@ import com.beust.jcommander.Parameter;
 
 public class CommandLineParams {
 
-	@Parameter(names = { "-h", "-help" }, description = "This info message.", help = true)
+	@Parameter(names = { "-h", "-help" }, description = "Ajuda", help = true)
 	public boolean help;
 
-	@Parameter(names = { "-s", "-setup" }, description = "Generate file configuration default")
-	public boolean setup = false;
-
-	@Parameter(names = { "-j", "-generate-jira-stats" }, description = "Generate file csv jira")
-	public boolean generateJiraStats = false;
+	@Parameter(names = { "-j", "-jira" }, description = "Arquivo CSV gerado do jira")
+	public String jiraCSV;
 	
-	@Parameter(names = { "-v", "-generate-svn-stats" }, description = "Generate file csv svn")
-	public boolean generateSvnStats = false;
-	
-	@Parameter(names = { "-a", "-generate-all" }, description = "Generate file csv jira+svn")
-	public boolean generateAll = false;
+	@Parameter(names = { "-s", "-svn" }, description = "Arquivo CSV gerado do svn")
+	public String svnCSV;
 
 }

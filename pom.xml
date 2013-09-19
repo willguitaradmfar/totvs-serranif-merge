@@ -95,7 +95,7 @@
                     <manifest>
                         <addClasspath>true</addClasspath>
                         <classpathPrefix>lib/</classpathPrefix>
-                        <mainClass>br.com.totvs.setup.Main</mainClass>
+                        <mainClass>br.com.totvs.merge.Main</mainClass>
                     </manifest>
                 </archive>
             </configuration>
